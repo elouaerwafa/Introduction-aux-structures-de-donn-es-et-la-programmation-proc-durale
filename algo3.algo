@@ -1,0 +1,40 @@
+ALGORITHM PROCEDURE dot_product(v1,v2,ps)
+VAR
+    v1: ARRAY_OF INTEGER;
+    v2: ARRAY_OF INTEGER;
+    i,j:=INTEGER
+BEGIN
+// calculer le produit scalaire
+    ps:=0
+    FOR i FROM 1 to length v1 STEP 1 DO 
+    ps:= ps+v1[i]*v2[i]
+    END_FOR
+    //VERIFIER L'HORTHOGONALITE
+    FOR j FROM 1  TO n STEP 1  DO
+        write "entrez le nombre de composantes de vecteurs "
+        Read nc
+        write " entrez les composantes de vecteur v1 "
+        FOR i FROM 1 TO nc STEP 1 DO
+            write v1[i]
+        END_FOR
+        write " entrez les composantes de vecteur v1 "
+        FOR i FROM 1 TO nc STEP 1  DO
+            write v2[i]
+        END_FOR
+        END_FOR
+    ps:= 0
+    FOR i FROM 1 TO nc STEP 1  DO
+    ps:= ps+dot_product(v1,v2)
+    IF (ps=0) THEN
+        ecrire "les vecteurs v1 et v2 sont orthogonaux"
+        else
+        ecrire"les vecteurs v1 et v2 ne sont pas orthogonaux"
+
+    END_IF
+        
+    END_FOR
+
+
+
+
+END

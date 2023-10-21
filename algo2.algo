@@ -1,0 +1,27 @@
+ALGORITHM somme
+VAR 
+T2: [];
+T1 : ARRAY_OF INTEGER;
+T : ARRAY_OF INTEGER;
+i,j,k:=INTEGER
+BEGIN
+// verification des elements distincts
+FOR i FROM 0 TO n-1 STEP 1  DO
+    IF (T[i]<>T2[k]) THEN
+        T2[k] := T[i]
+    END_IF
+    END_FOR
+    FOR j FROM 0 TO m-1 STEP 1  DO
+        IF (T[j] <> T2[K])
+        T2[k-n+1]:=T[j]
+        END_IF
+        END_FOR
+
+    S:= 0
+    // faire la somme 
+    FOR K FROM 0 TO l-1 STEP 1 DO
+    S:= S+T2[K]
+    END_FOR
+    
+    RETURN (S)
+    
